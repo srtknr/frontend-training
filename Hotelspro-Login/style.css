@@ -1,0 +1,340 @@
+
+body {
+    margin: 0;
+	padding: 0;
+}
+.fullpage{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.login-header {
+	padding-left: 60px;
+    padding-right: 60px;
+	position: fixed;
+	top: 0;
+	height: 80px;
+	width:100%;
+	box-shadow: 0 2px 40px 0 hsla(0,0%,57%,.2);
+	background: #fff;
+	z-index: 2;
+	font-family: 'Fira Sans', sans-serif;
+	display: flex;
+	justify-content: space-evenly;
+}
+.top-logo {
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	width: 200px;
+	align-items: center;
+	margin-left: -140px;
+}
+.top-menu {
+	width: 610px;
+	margin-left: 150px;
+}
+.top-menu .menu {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	width: 610px;
+	align-items: center;
+}
+.top-menu li{
+	display: block;
+}
+.menu-item {
+	height: 100%;
+}
+.menu-item a {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	color: #83949d;
+	font-size: 18px;
+	text-decoration: none;
+	font-family: 'Fira Sans', sans-serif;	
+}
+.menu-item a:hover {
+	border-bottom: 3px solid orange;
+	color: teal;    
+}
+.menu-item a:hover.eng {
+	border-bottom: 0;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	margin-left: -60px;
+}
+.menu-item:hover .dropdown-content {
+	display: block;
+}
+.signup-button {
+	border-radius: 17.5px;
+	border: 2px solid #fff;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.04);
+	text-decoration: none;
+	border-color: #f9a11b!important;
+	color: #fff!important;
+	background-color: #f9a11b!important;
+	padding: 5px 20px 5px 20px;
+}
+.signup-button a{
+	color: white;
+  text-decoration: none;
+}
+.signup-content {
+	display: none;
+	position: absolute;
+	background-color:white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	z-index: 1;
+	margin: 28px -50px;
+	color: black;
+}
+.signup-button:hover .signup-content {
+	display: block;
+}
+.login-button {
+	border-radius: 17.5px;
+	border: 2px solid #fff;
+	box-shadow: 0 5px 10px 0 rgba(0,0,0,.04);
+	text-decoration: none;
+	border-color: #f9a11b!important;
+	color: #f9a11b!important;
+	background-color: white!important;
+	padding: 5px 20px 5px 20px;
+}
+.signup-button:hover {
+	box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.103);
+}
+.login-button a {
+	border-color: #f9a11b;
+    color: #f9a11b;
+	text-decoration: none;
+	padding: 5px 20px 5px 20px;
+}
+.login-button:hover {
+	box-shadow: 0 0 6px 4px rgba(0, 0, 0, 0.103);
+}
+.pagelogin {
+	display: flex;
+  	justify-content: space-evenly;
+	margin-top: 130px;
+}
+.pagelogin{
+	margin-bottom: 112px;
+    display: flex;
+}
+.login-container {
+	width: 710px;
+	height: 349px;
+	display: inline-block;
+	border-radius: 6px;
+	background-color: #fff;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
+	padding: 42px 30px;
+	font-family: 'Fira Sans', sans-serif;
+	margin-right: -80px;	
+}
+.signup-container {
+	width:370px;
+	height:436px;
+	box-shadow: 0 0 4px 0 rgba(0,0,0,.1);
+	border-radius: 6px;
+	background-image: url(https://www.hotelspro.com/static/xpro.com/img/login.png);
+	background-size: cover;
+	background-position: bottom;
+	display: inline-block;
+	font-family: 'Fira Sans', sans-serif;
+	margin-right: 20px;
+}
+.login-page-title p {
+	margin: 0px;
+}
+.login-page-title {
+	font-size: 36px;
+	font-weight: 300;
+	line-height: 50px;
+	color: #5b6f79;
+}
+.form .text1{
+	width: 370px;
+    height: 50px;
+    border-radius: 4px !important;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #343434!important;
+    padding: 10px 15px;
+}
+.form p {
+	color: #5b6f79;
+}
+.form input {
+	height: 50px;
+    width: 370px;
+}
+.button-field {
+	margin-top: 40px;
+    width: 370px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-field .button-field-container {
+	display: flex;
+	flex-direction: column; 
+}
+.button-field a {
+	text-decoration: none;
+    font-size: 14px;
+	color: #1196a5;
+	line-height: 0.5em;
+}
+.button-field .login-button1 {
+	width: 168px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #f9a11b !important;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #fff !important;
+    text-shadow: 0 1px 4px rgba(0,0,0,.1);
+}
+.signup-container .title {
+	font-size: 36px;
+    font-weight: 300;
+    line-height: 50px;
+	color:white;
+	margin-left: 30px;
+}
+.signup-container .text {
+	width: 310px;
+    margin-top: -30px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 36px;
+	color:white;
+	margin-left:30px;
+}
+.signup-button-container {
+	margin-top: 80px;
+	margin-left:25px;
+}
+.signup-button-container a {
+	width: 310px;
+    height: 45px;
+    margin-top: 15px;
+    padding-left: 20px;
+   	border-radius: 25px;
+    border: 1px solid white;
+    font-size: 18px;
+    line-height: 45px;
+	color:white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	font-family: 'Fira Sans', sans-serif;
+	
+}
+.signup-button-container a:hover {
+	color: #f9a11d;
+    background-color: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+}
+.footer {
+	font-family: Fira Sans,sans-serif;
+    margin-top: 50px;
+}
+.link-container {
+	height: 154px;
+    background-color: #5b6f79;
+}
+.wrapper {
+	height: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+.footer .wrapper {
+	width: 1170px;
+    padding: 0;
+}
+.link-container .wrapper {
+	line-height: 154px;
+	display: flex;
+    justify-content: space-between;
+}
+.link-container .wrapper .logo {
+	height: 100%;
+    display: flex;
+	align-items: center;
+	width: 200px;
+}
+.link-group-container {
+	display: flex;
+}
+.link-group-container .link-item:not(:last-child) {
+	padding-right: 30px;
+}
+.link-group-container .link-item a {
+	font-size: 17px; 
+	color: #fff;
+	text-decoration: none;
+	font-weight: lighter;
+}
+.logo-container {
+	height: 50px;
+    background-color: #52646d;
+}
+.logo-container .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-container .wrapper .site-footer-logos {
+	display: flex;
+    height: 50px;
+    align-items: center;
+}
+.logo-container .wrapper img{
+	height: 25px;
+}
+
+.site-footer {
+	height: 50px;
+    background-color: #5b6f79;
+}
+.site-footer .wrapper {
+	display: flex;
+    align-items: center;
+	justify-content: space-between;
+	
+}	
+.site-footer p {
+	display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+	color: #fff;
+	margin: 0px;
+}	
+
+
+
