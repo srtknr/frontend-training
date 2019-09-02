@@ -1,0 +1,36 @@
+.page {
+  padding-left: 30%;
+  padding-right: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+}
+.top-text-container {
+  margin-top: 10px;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+}
+.bottom-text-container {
+  margin-bottom: 10px;
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+ bottom: 0; 
+} 
+img {
+  width: 100%;
+}
+
