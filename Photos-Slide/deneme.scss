@@ -1,0 +1,66 @@
+.full-page {
+  display: flex;
+  justify-content: center;
+
+  .slider-title {
+    display: flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 50px;
+      font-family: serif;
+      color: cadetblue;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .image-slider {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    box-shadow: -16px 22px 23px 0px rgba(0,0,0,0.75);
+  
+    .myImage {
+    height: 500px;
+    width: 0;
+    opacity: 0;
+       
+      &.active {
+        opacity: 1;
+        animation-name: moveit;
+        animation-duration: 2s;
+        width: 100%;
+      }
+    }
+    .prev-button , .next-button{
+      position: absolute;
+      padding: 16px;
+      font-weight: bold;
+      font-size: 30px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      z-index: 1;
+      cursor: w-resize;
+      background-color: rgba(0,0,0,-0.8);
+      border-style: none;
+        &:hover {
+          background-color: rgba(0,0,0,0.2);
+        }
+    }
+    .next-button {
+      right: 320px;
+      cursor: e-resize;
+    }
+  }
+}
+
+  @-webkit-keyframes moveit {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+
+
